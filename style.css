@@ -1,0 +1,141 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: rgba(205,207,192,255);
+    --bg2: #010103;
+    --header: white;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 63%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--bg);
+}
+
+.header {
+    background: var(--header);
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0%; left:0%; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 6rem;
+}
+.header .navbar a{
+    margin: 0 1 rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    margin-left: 20px;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(pics/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content {
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: black;
+}
+.home .content p{
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: black;
+}
+
+.aboutus {
+    background-color: aliceblue;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading {
+    text-align: center;
+    color: var(--bg2);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+
+.featured {
+    background-color: var(--bg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    background-color: aliceblue;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.contactus {
+    background-color: var(--bg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.blogs {
+    background-color: aliceblue;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
