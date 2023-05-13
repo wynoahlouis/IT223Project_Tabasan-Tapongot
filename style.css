@@ -25,6 +25,14 @@ html{
     scroll-behavior: smooth;
 }
 
+body, html {
+    border: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 html::-webkit-scrollbar {
     width: 0.8rem;
 }
@@ -129,6 +137,22 @@ section {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+    margin: 0;
+}
+
+#cup {
+    position: relative;
+    width: 45%;
+    left: 0px;
+    top: 0px;
+    margin: 5px;   
+}
+
+#maketea {
+    width: 50%;
+    float: right;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .heading {
