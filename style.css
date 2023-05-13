@@ -5,11 +5,13 @@
     --bg2: #010103;
     --header: white;
     --border: .1rem solid rgba(255,255,255,.3);
+    --featurecard: whitesmoke;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
-    margin: 0; padding:0;
+    margin: 0; 
+    padding:0;
     box-sizing: border-box;
     text-decoration: none;
     text-transform: capitalize;
@@ -24,7 +26,7 @@ html{
 }
 
 html::-webkit-scrollbar {
-    width: .8rem;
+    width: 0.8rem;
 }
 
 html::-webkit-scrollbar-track {
@@ -40,55 +42,80 @@ body {
     background: var(--bg);
 }
 
+section {
+    padding: 2rem 7%;
+}
+
+
+/* Header and Navbar */
 .header {
     background: var(--header);
     display: flex;
     align-items:center;
     justify-content:space-between;
-    padding: 1.5rem 7%;
+    padding: 1.5rem 2%;
+    padding-right: 3%;
     border-bottom: var(--border);
     position: fixed;
     top: 0%; left:0%; right: 0;
     z-index: 1000;
+    
 }
 
-.header .logo img {
-    height: 6rem;
+.logoholder:hover {
+    transform: scale(1.1);
 }
-.header .navbar a{
+
+.logo img {
+    height: 6rem;
+    position:static;
+}
+.navbar a{
     margin: 0 1 rem;
     font-size: 1.6rem;
     color: var(--black);
     margin-left: 20px;
 }
 
-.header .navbar a:hover{
+.navbar a:hover {
     color: var(--main-color);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
+    transform: scale(1.5);
 }
 
-section {
-    padding: 2rem 7%;
-}
-
+/* Home Page */
 .home{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(pics/bg.png) no-repeat;
+    background: url(images/background-image-home.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
-.home .content {
+
+.home .homecontent {
     max-width: 60rem;
 }
-.home .content h3{
-    font-size: 6rem;
+
+#videoloop {
+    transform: translateY(20%);
+
+}
+#homename {
+    width: 200px;
+}
+
+.homedetails {
+    transform: translateY(50%);
+
+}
+.homedetails h5{
+    font-size: 2rem;
     text-transform: uppercase;
     color: black;
 }
-.home .content p{
+.homedetails p{
     font-size: 1rem;
     font-weight: lighter;
     line-height: 1.8;
@@ -96,6 +123,7 @@ section {
     color: black;
 }
 
+/* About Us Page*/
 .aboutus {
     background-color: aliceblue;
     min-height: 100vh;
@@ -111,7 +139,7 @@ section {
     font-size: 4rem;
 }
 
-
+/* Featured Page */
 .featured {
     background-color: var(--bg);
     min-height: 100vh;
@@ -119,6 +147,177 @@ section {
     background-position: center;
 }
 
+.featurebox {
+    background-color: beige;
+    height: 250px;
+    width: 1200px;
+    transform: translateY(100%);
+    margin-left: -5%;
+    border-radius: 10px;
+    background-image: url(images/pattern1.jpg);
+    opacity: 50%;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.featured .featurecontent {
+    display: flex;
+    flex: wrap;
+    transform: translateY(-50%);
+    
+}
+
+.featuredetails {
+    transform: translateY(80%);
+    font-size: 15px;
+}
+
+.featurebtn {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: smaller;
+    color: black;
+    font-weight: bold;
+    /* box-shadow: 0px 2px 10px gray; */
+    border: black 1px solid;
+}
+
+.featurebtn:hover {
+    background-color: lightgreen;
+}
+
+.card {
+    flex: 30%;
+    margin: 10px 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    height: 350px;
+    width: 350;
+    background-color: var(--featurecard);
+    box-shadow: 10px 10px 10px gray;
+    transition: 1s;
+}
+
+.featurecontent:hover .card {
+    opacity: .5;
+    filter: blur(5px);
+    overflow:auto;
+
+}
+
+.featurecontent .card:hover {
+    opacity: 1;
+    filter:blur(0px);
+    overflow:unset;
+
+}
+
+.card:hover{
+    background-color: rgb(246, 197, 197);
+    transform: scale(1.2);
+
+}
+
+/* .featuredcontainer1 {
+    flex: 30%;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    height: 400px;
+    width: 350;
+    background-color: var(--featurecard);
+    box-shadow: 10px 10px 10px gray;
+    transition: 1s;
+} */
+
+/* .featuredcontainer1:hover{
+    background-color: rgb(246, 197, 197);
+    transform: scale(1.2);
+
+} */
+
+/* .featuredcontainer1:hover ~ .featuredcontainer2:not(:hover) {
+    filter: blur(5px);
+}
+
+.featuredcontainer1:hover ~ .featuredcontainer3 {
+    filter: blur(5px);
+} */
+
+
+#featured1 {
+    transform: translateY(10%);
+    box-shadow: 5px 5px 5px gray;
+}
+
+/* .featuredcontainer2 {
+    flex: 30%;
+    margin: 10px 50px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    height: 400px;
+    width: 350;
+    background-color: var(--featurecard);
+    box-shadow: 10px 10px 10px gray;
+    transition: 1s;
+}
+
+.featuredcontainer2:hover {
+    background-color: rgb(246, 197, 197);
+    transform: scale(1.2);
+} */
+
+/* .featuredcontainer2:hover ~ .featuredcontainer1 {
+    filter: blur(5px);
+}
+
+
+.featuredcontainer2:hover ~ .featuredcontainer3 {
+    filter: blur(5px);
+} */
+
+#featured2 {
+    transform: translateY(10%);
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+/* .featuredcontainer3 {
+    flex: 30%;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    height: 400px;
+    width: 350;
+    background-color: var(--featurecard);
+    box-shadow: 10px 10px 10px gray;
+    transition: 1s;
+}
+
+.featuredcontainer3:hover {
+    background-color: rgb(246, 197, 197);
+    transform: scale(1.2);
+}
+
+.featuredcontainer3:hover ~ .featuredcontainer1 {
+    filter: blur(5px);
+}
+
+.featuredcontainer3:hover ~ .featuredcontainer2 {
+    filter: blur(5px);
+} */
+
+#featured3 {
+    transform: translateY(10%);
+    box-shadow: 5px 5px 5px gray;
+
+}
+
+
+/* Menu Products */
 .menu {
     background-color: aliceblue;
     min-height: 100vh;
@@ -126,6 +325,7 @@ section {
     background-position: center;
 }
 
+/* Contact Us Page*/
 .contactus {
     background-color: var(--bg);
     min-height: 100vh;
@@ -133,6 +333,7 @@ section {
     background-position: center;
 }
 
+/* Blogs */
 .blogs {
     background-color: aliceblue;
     min-height: 100vh;
