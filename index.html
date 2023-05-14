@@ -10,11 +10,14 @@
 </head>
 <body>
     <header class="header">
+        <div class="logoholder">
+            <a href="#aboutus" class="logo">
+                <img src="images/SereniteaLogo.png" alt="" width="50px">
+                <img src="images/namefornavbar.png" alt="" width="200px">
 
-        <a href="#aboutus" class="logo">
-            <img src="images/SereniteaLogo.png" alt="" width="60px">
-            <img src="images/namefornavbar.png" alt="" width="200px">
-        </a>
+                <!-- <img src="images/logofornavbar.png" alt=""> -->
+            </a>
+        </div>
     <nav class="navbar">
         <a href="#home">Home</a>
         <a href="#aboutus">About Us</a>
@@ -23,21 +26,80 @@
         <a href="#contactus">Contact Us</a>
         <a href="#blogs">Blogs</a>
     </nav>
+
+    <div class="searchbar"><input type="text" placeholder="Search"></div>
     </header>
 
     <section class="home" id="home">
-        <div class="content">
-            <img src="images/namefornavbar.png" alt="Serenitea">
-            <h>This is Home</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, dolorem, sint vitae aperiam consequuntur unde itaque, quidem vel quis laboriosam deserunt. Dolor provident aliquam sequi sint maiores enim doloribus qui maxime. Dolore harum similique nesciunt totam voluptates alias. Vero, est, praesentium enim molestiae soluta pariatur nostrum ipsa, ducimus quia nulla quod quidem odio doloremque libero veniam beatae? Pariatur, sapiente a doloremque atque rerum expedita aliquam debitis iste, rem nisi porro officiis, nostrum laborum beatae facere iusto! A voluptate tempora, non nemo ad natus debitis architecto, illo praesentium cupiditate adipisci quam omnis, aspernatur rerum enim dolorem reprehenderit eos tenetur! Temporibus, nobis!</p>
+        <div class="homecontent">
+            <video id="videoloop" width="auto" height="350px"  autoplay>
+                <source src="videos/videoloop.mp4" type="video/mp4">
+              </video>
+              <div class="homedetails">
+                <img id="homename" src="images/nameforhome.png" alt="Serenitea">
+                <br>
+                <h5>Experience Serenitea: Unleash Your Senses with Exquisite Drink Creations.</h5>
+                <p>Experience Serenitea: Unleash Your Senses with Exquisite Drink Creations.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
         </div>
     </section>
 
+    <script>
+        var video = document.getElementById('videoloop');
+        var playing = true;
+    
+        var links = document.querySelectorAll('nav a');
+        links.forEach(function(link) {
+          link.addEventListener('click', function(event) {
+            event.preventDefault();
+            pauseVideo();
+
+            var targetId = this.getAttribute('href');
+            var targetSection = document.querySelector(targetId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          });
+        });
+    
+        window.addEventListener('beforeunload', pauseVideo);
+        window.addEventListener('onclick', pauseVideo);
+
+        window.addEventListener('pageshow', playVideo);
+
+        function playVideo() {
+            if (!playing) {
+            video.play();
+            playing = true;
+          }
+        }
+
+        function pauseVideo() {
+            if (playing) {
+            video.pause();
+            playing = false;
+          }
+        }
+      </script>
+    
+    <!-- <script>
+        function pauseVideoOnUnload() {
+            var video = document.getElementById('videoloop');
+            video.stop();
+        }
+
+        window.addEventListener('hashchange', pauseVideoOnUnload);
+
+
+        // var video = document.getElementById('videoloop');
+        // window.addEventListener('beforeunload', function(event) {
+        //     video.stop();
+        // });
+    </script> -->
+
     <section class="aboutus" id="aboutus">
-        <h3 class="heading" id="aboutusheader">About Us</h3>
-        <img id="cup" src="images/cup.png" alt="Serenitea Logo">
+        <div class="heading" id="aboutusheader"><h3>About Us</h3></div>
+        <div><img id="cup" src="images/cup.png" alt="Serenitea Logo"></div>
             <div class="content" id="maketea">
-                
                 <h3>Make Tea, not War</h3>
                 <br>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae expedita accusamus tenetur labore vero harum dolorum a qui, fugiat molestiae aut odio ab saepe minus dignissimos facere doloribus, et nam?</p>
@@ -47,10 +109,38 @@
     </section>
 
     <section class="featured" id="featured">
-        <div class="content">
-            <!-- <img src="#" alt="" > -->
+        <div class="featuretitle">
             <h3>Featured Products</h3>
             <p>Insert Product Posters</p>
+    </div>
+
+        <div class="featurebox"></div>
+
+        <div class="featurecontent">
+            <div class="card featuredcontainer1">
+                <img id="featured1" src="images/featured1.jpg" alt="" height="220px">
+                <div class="featuredetails">
+                    <h3 style="margin-bottom:8px">What's New</h3>
+                    <a href="#" class="featurebtn">See More</a>
+                </div>
+            </div>
+
+            <div class="card featuredcontainer2">
+                <img id="featured2" src="images/featured2.jpg" alt="" height="220px">
+                <div class="featuredetails">
+                    <h3 style="margin-bottom:8px">Best Seller</h3>
+                    <a href="#" class="featurebtn">See More</a>
+                </div>
+            </div>
+
+            <div class="card featuredcontainer3">
+                <img id="featured3" src="images/featured3.jpg" alt="" height="220px">
+                <div class="featuredetails">
+                    <h3 style="margin-bottom:8px">On Sale</h3>
+                    <a href="#" class="featurebtn">See More</a>
+                </div>
+            </div>
+            
         </div>
     </section>
 
