@@ -67,6 +67,9 @@ section {
     cursor: pointer;
 }
 
+ul {
+    list-style-type: none;
+}
 
 /* Header and Navbar */
 .header {
@@ -393,20 +396,48 @@ section {
 /* Contact Us Page*/
 .contactus {
     background-color: #F5f5f5;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    align-content: center;
+    /* background-size: cover;
+    background-position: center; */
+    min-height: fit-content;
 }
 
 #contactheader {
     font-size: 3rem;
     color: #bea93e;
-    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
 }
 
-#contactus {
+#contact-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #313b41;
+}
+
+.mainlist {
+    font-size: 1.7rem;
+}
+
+.sublist {
+    color: #F25A28;
+}
+
+footer {
+    height: 10rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #bea93e;
+    background-size: cover;
+    background-position: center;
+}
+
+.footercontent {
+    display: grid;
+    justify-content: center;
+    vertical-align: bottom;
 }
