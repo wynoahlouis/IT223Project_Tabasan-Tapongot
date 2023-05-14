@@ -54,6 +54,19 @@ section {
     padding: 2rem 7%;
 }
 
+.btn {
+    display: inline-block;
+    background-color: #F25A28;
+    padding: 10px;
+    width: 13rem;
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+    border: 2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
 
 /* Header and Navbar */
 .header {
@@ -133,7 +146,7 @@ section {
 
 /* About Us Page*/
 .aboutus {
-    background-color: aliceblue;
+    background-color: #eef8eb;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -166,7 +179,7 @@ section {
 }
 
 #maketeanotwar {
-    color: #f15c2b;
+    color: #313b41;
 }
 
 #aboutus-content {
@@ -181,9 +194,11 @@ section {
     font-size: 4rem;
 }
 
+
+
 /* Featured Page */
 .featured {
-    background-color: var(--bg);
+    background-color: #FFD9B4;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -369,7 +384,7 @@ section {
 
 /* Contact Us Page*/
 .contactus {
-    background-color: var(--bg);
+    background-color: #FFD9B4;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
