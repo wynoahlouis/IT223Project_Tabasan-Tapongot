@@ -146,7 +146,7 @@ section {
 
 /* About Us Page*/
 .aboutus {
-    background-color: #eef8eb;
+    background-color: #fffafa;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -382,18 +382,31 @@ section {
     background-position: center;
 }
 
-/* Contact Us Page*/
-.contactus {
-    background-color: #FFD9B4;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-
 /* Blogs */
 .blogs {
     background-color: aliceblue;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+}
+
+/* Contact Us Page*/
+.contactus {
+    background-color: #F5f5f5;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+}
+
+#contactheader {
+    font-size: 3rem;
+    color: #bea93e;
+    align-content: center;
+}
+
+#contactus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
 }
