@@ -468,9 +468,11 @@ ul {
 /* Contact Us Page*/
 .contactus {
     background-color: #F5f5f5;
-    /* background-size: cover;
-    background-position: center; */
+    background-size: cover;
+    background-position: center;
     min-height: fit-content;
+    padding: 0;
+    padding-top: 3rem;
 }
 
 #contactheader {
@@ -501,11 +503,14 @@ ul {
 
 footer {
     height: 10rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    color:#13131a;
     text-align: center;
     background-color: #bea93e;
     background-size: cover;
     background-position: center;
+    padding: 3rem;
+    margin-top: 5rem;
 }
 
 .footercontent {
