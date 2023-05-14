@@ -139,31 +139,38 @@ section {
     background-position: center;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+}
+
+#image-side {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#text-side {
+    font-size: 2rem;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: justify;
 }
 
 #aboutusheader {
-    width: 45%;
-    float: right;
+    font-size: 3rem;
+    color: #bea93e;
 }
 
-#cup {
-    position: relative;
-    width: 50%;
-    left: 0px;
-    top: 0px;
-    bottom: 0;
-    margin-right: 5px; 
-    margin-bottom: 0;
-    padding: 0;
+#maketeanotwar {
+    color: #f15c2b;
 }
 
-#maketea {
-    width: 45%;
-    float: right;
-    font-size: 20px;
-    text-align: justify;
-    margin: 0;
-    padding: 0;
+#aboutus-content {
+    color: #313b41;
 }
 
 .heading {
