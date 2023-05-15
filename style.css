@@ -71,6 +71,15 @@ ul {
     list-style-type: none;
 }
 
+.title {
+    font-size: 3rem;
+    color: #bea93e;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
 /* Header and Navbar */
 .header {
     background: var(--header);
@@ -224,14 +233,7 @@ ul {
     background-position: center;
 }
 
-.featuretitle {
-    font-size: 3rem;
-    color: #bea93e;
-    justify-content: center;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 0;
-}
+
 
 .featurebox {
     background-color: beige;
