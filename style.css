@@ -123,15 +123,16 @@ ul {
 }
 
 #videoloop {
-    transform: translateY(20%);
+    transform: translateY(10%);
 
 }
-#homename {
+
+/* #homename {
     width: 200px;
-}
+} */
 
 .homedetails {
-    transform: translateY(50%);
+    transform: translateY(30%);
 
 }
 .homedetails h5{
@@ -145,6 +146,18 @@ ul {
     line-height: 1.8;
     padding: 1rem 0;
     color: black;
+    margin-bottom: 10px;
+}
+
+.home .learnmorebtn {
+    padding: 8px;
+    border-radius: 10px;
+    font-size: x-small;
+    color: white;
+    font-weight: bold;
+    transform: translateY(-80%);
+    background-color:#F25A28;
+    text-transform: uppercase;
 }
 
 /* About Us Page*/
@@ -169,7 +182,7 @@ ul {
 
 #text-side {
     font-size: 2rem;
-    padding-top: 20rem;
+    padding-top: 15rem;
     padding-bottom: 20rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -269,14 +282,10 @@ ul {
     opacity: 1;
     filter:blur(0px);
     overflow:unset;
-
-}
-
-.featurecontent .card:hover{
     background-color: rgb(246, 197, 197);
     transform: scale(1.2);
-
 }
+
 
 /* .featuredcontainer1 {
     flex: 30%;
