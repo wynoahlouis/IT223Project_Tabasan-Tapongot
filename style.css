@@ -14,7 +14,7 @@
     padding:0;
     box-sizing: border-box;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: .2s linear;
 }
 
@@ -65,6 +65,11 @@ section {
     border: 2rem;
     border-radius: 10rem;
     cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #BEA93E;
+    color: #13131a;
 }
 
 ul {
@@ -147,17 +152,18 @@ ul {
 
 }
 .homedetails h5{
-    font-size: 2rem;
-    text-transform: uppercase;
+    font-size: 2.17rem;
+    text-transform: capitalize;
     color: black;
 }
 .homedetails p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
     color: black;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 .home .learnmorebtn {
@@ -190,7 +196,7 @@ ul {
     object-fit: cover;
     overflow: hidden;
     /* filter: drop-shadow(.5rem .8rem .5rem black); */
-    border-bottom-right-radius: 3rem;
+    /* border-bottom-right-radius: 3rem; */
 }
 
 #text-side {
@@ -209,9 +215,10 @@ ul {
 
 #maketeanotwar {
     color: #313b41;
+    margin-bottom: 1rem;
 }
 
-#aboutus-content {
+#text-side p {
     color: #313b41;
 }
 
@@ -222,7 +229,6 @@ ul {
     padding-bottom: 3.5rem;
     font-size: 4rem;
 }
-
 
 
 /* Featured Page */
