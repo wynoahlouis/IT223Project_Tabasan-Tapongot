@@ -1,7 +1,7 @@
 :root {
     --main-color: #d3ad7f;
     --black: #13131a;
-    --bg: rgba(205,207,192,255);
+    --bg: #FFFFF0;
     --bg2: #010103;
     --header: white;
     --border: .1rem solid rgba(255,255,255,.3);
@@ -69,6 +69,15 @@ section {
 
 ul {
     list-style-type: none;
+}
+
+.title {
+    font-size: 3rem;
+    color: #bea93e;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 /* Header and Navbar */
@@ -169,7 +178,7 @@ ul {
 
 /* About Us Page*/
 .aboutus {
-    background-color: #fffafa;
+    background-color: var(--bg);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -185,6 +194,8 @@ ul {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    /* filter: drop-shadow(.5rem .8rem .5rem black); */
+    border-bottom-right-radius: 3rem;
 }
 
 #text-side {
@@ -221,11 +232,13 @@ ul {
 
 /* Featured Page */
 .featured {
-    background-color: #FFD9B4;
+    background-color: var(--bg);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
 }
+
+
 
 .featurebox {
     background-color: beige;
@@ -395,7 +408,7 @@ ul {
 
 /* Menu Products */
 .menu {
-    background-color: aliceblue;
+    background-color: var(--bg);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -476,7 +489,7 @@ ul {
 
 /* Blogs */
 .blogs {
-    background-color: white;
+    background-color: var(--bg);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -556,7 +569,7 @@ ul {
 
 /* Contact Us Page*/
 .contactus {
-    background-color: #F5f5f5;
+    background-color: var(--bg);
     background-size: cover;
     background-position: center;
     min-height: fit-content;
