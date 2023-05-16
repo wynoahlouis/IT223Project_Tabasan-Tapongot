@@ -177,6 +177,11 @@ ul {
     text-transform: uppercase;
 }
 
+.learnmorebtn:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
 /* About Us Page*/
 .aboutus {
     background-color: var(--bg);
