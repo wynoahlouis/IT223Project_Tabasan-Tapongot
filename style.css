@@ -608,7 +608,6 @@ ul {
     width: 5rem;
     height: auto;
     border-radius: 5px;
-
 }
 
 /* .blogcontent .frame {
@@ -663,12 +662,50 @@ ul {
     margin-top: 3rem;
 }
 
+form {
+    font-size: 1.7rem;
+}
+
+#uname, #email {
+    width: 30rem;
+}
+
+form #message {
+    height: 10rem;
+    width: 30rem;
+}
+
+input[type=text] {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+input[type=submit] {
+    background-color: #F25A28;
+    padding: 5px;
+    width: 8rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
 .mainlist {
     font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contactslogo {
+    width: 3rem;
 }
 
 .sublist {
     color: #F25A28;
+
 }
 
 footer {
@@ -689,4 +726,101 @@ footer {
     vertical-align: bottom;
 }
 
+@media (max-width: 991px) {
+	html {
+		font-size: 55%;
+	}
+	.header {
+		padding: 1.5rem 2rem;
+	}
+	section {
+		padding: 2rem;
+        display: flex;
+        flex-direction: column;
+	}
+}
 
+@media (max-width: 768px) {
+	#menu-btn {
+		display: inline-block;
+	}
+	.header .navbar {
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		background: aliceblue;
+		width: 25rem;
+		height: calc(100vh - 9.5rem);
+	}
+	.header .navbar.active {
+		right: 0;
+	}
+	.header .navbar a {
+		color: var(--black);
+		display: block;
+		margin: 1.5rem;
+		padding: 0.5rem;
+		font-size: 2rem;
+	}
+	.header .search-form {
+		width: 90%;
+		right: 2rem;
+	}
+	.home {
+		background-position: left;
+		justify-content: center;
+		text-align: center;
+	}
+	.home .content h3 {
+		font-size: 4.5rem;
+	}
+	.home .content p {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 350px) {
+    section {
+        height: auto;
+        width: auto;
+    }
+    .homedetails {
+        width: 100%;
+    }
+
+    .aboutus {
+       display: inline-block;
+       align-items: center;
+       justify-content: center;
+    }
+    #image-side {
+        width: auto;
+    }
+    #text-side {
+        padding: 0;
+    }
+    #aboutusheader {
+        align-content: center;
+        text-align: center;
+    }
+    .title {
+        margin-top: 0;
+    }
+    .featurecontent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogcontent .frame {
+        flex-direction: column;
+    }
+
+    .frame img, .blogdetails {
+        width: 100%;
+    }
+    
+
+    #contact-content {
+        display: inline-block;
+    }
+}
