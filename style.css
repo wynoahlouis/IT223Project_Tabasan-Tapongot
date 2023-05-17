@@ -609,7 +609,6 @@ ul {
     width: 5rem;
     height: auto;
     border-radius: 5px;
-
 }
 
 /* .blogcontent .frame {
@@ -811,6 +810,16 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
+    .blogcontent .frame {
+        flex-direction: column;
+    }
+
+    .frame img, .blogdetails {
+        width: 100%;
+    }
+    
+
     #contact-content {
         display: inline-block;
     }
