@@ -78,11 +78,11 @@ ul {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #bea93e;
     justify-content: center;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 /* Header and Navbar */
@@ -251,7 +251,7 @@ ul {
     background: url(images/background-image-home.png) no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: var(--bg2);
+    background-color: var(--bg);
 }
 
 .home .homecontent {
@@ -300,7 +300,7 @@ ul {
 }
 
 .learnmorebtn:hover {
-    background-color: lightgreen;
+    background-color: #BEA93E;
     color: black;
 }
 
@@ -403,7 +403,7 @@ ul {
 
 }
 
-.btn {
+/* .btn {
     display: inline-block;
     background-color: #F25A28;
     padding: 10px;
@@ -413,10 +413,11 @@ ul {
     font-size: 1.7rem;
     border: 2rem;
     border-radius: 10rem;
-}
+} */
 
 .featurebtn:hover {
-    background-color: lightgreen;
+    background-color: #BEA93E;
+    color: #13131a;
 }
 
 .featurecontent .card {
@@ -739,15 +740,6 @@ ul {
     padding-top: 3rem;
 }
 
-#contactheader {
-    font-size: 3rem;
-    color: #bea93e;
-    justify-content: center;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-}
-
 #contact-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -755,6 +747,7 @@ ul {
     font-size: 2.5rem;
     text-align: center;
     color: #313b41;
+    margin-top: 3rem;
 }
 
 .mainlist {
