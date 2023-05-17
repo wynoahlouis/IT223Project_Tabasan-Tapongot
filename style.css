@@ -265,10 +265,6 @@ ul {
 
 }
 
-/* #homename {
-    width: 200px;
-} */
-
 .homedetails {
     transform: translateY(30%);
 
@@ -448,98 +444,15 @@ ul {
     transform: scale(1.13);
 }
 
-
-/* .featuredcontainer1 {
-    flex: 30%;
-    margin: 10px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    height: 400px;
-    width: 350;
-    background-color: var(--featurecard);
-    box-shadow: 10px 10px 10px gray;
-    transition: 1s;
-} */
-
-/* .featuredcontainer1:hover{
-    background-color: rgb(246, 197, 197);
-    transform: scale(1.2);
-
-} */
-
-/* .featuredcontainer1:hover ~ .featuredcontainer2:not(:hover) {
-    filter: blur(5px);
-}
-
-.featuredcontainer1:hover ~ .featuredcontainer3 {
-    filter: blur(5px);
-} */
-
-
 #featured1 {
     transform: translateY(10%);
     box-shadow: 5px 5px 5px gray;
 }
 
-/* .featuredcontainer2 {
-    flex: 30%;
-    margin: 10px 50px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    height: 400px;
-    width: 350;
-    background-color: var(--featurecard);
-    box-shadow: 10px 10px 10px gray;
-    transition: 1s;
-}
-
-.featuredcontainer2:hover {
-    background-color: rgb(246, 197, 197);
-    transform: scale(1.2);
-} */
-
-/* .featuredcontainer2:hover ~ .featuredcontainer1 {
-    filter: blur(5px);
-}
-
-
-.featuredcontainer2:hover ~ .featuredcontainer3 {
-    filter: blur(5px);
-} */
-
 #featured2 {
     transform: translateY(10%);
     box-shadow: 5px 5px 5px gray;
 }
-
-
-/* .featuredcontainer3 {
-    flex: 30%;
-    margin: 10px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    height: 400px;
-    width: 350;
-    background-color: var(--featurecard);
-    box-shadow: 10px 10px 10px gray;
-    transition: 1s;
-}
-
-.featuredcontainer3:hover {
-    background-color: rgb(246, 197, 197);
-    transform: scale(1.2);
-}
-
-.featuredcontainer3:hover ~ .featuredcontainer1 {
-    filter: blur(5px);
-}
-
-.featuredcontainer3:hover ~ .featuredcontainer2 {
-    filter: blur(5px);
-} */
 
 #featured3 {
     transform: translateY(10%);
@@ -804,7 +717,7 @@ footer {
     background-size: cover;
     background-position: center;
     padding: 3rem;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 .footercontent {
