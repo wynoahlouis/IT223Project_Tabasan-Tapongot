@@ -77,11 +77,11 @@ ul {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #bea93e;
     justify-content: center;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -581,15 +581,6 @@ ul {
     min-height: fit-content;
     padding: 0;
     padding-top: 3rem;
-}
-
-#contactheader {
-    font-size: 3rem;
-    color: #bea93e;
-    justify-content: center;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
 }
 
 #contact-content {
