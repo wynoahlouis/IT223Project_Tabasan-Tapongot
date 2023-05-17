@@ -627,8 +627,26 @@ ul {
     margin-top: 3rem;
 }
 
+form {
+    font-size: 1.7rem;
+}
+
+form input {
+    width: 25rem;
+}
+
+#message {
+    height: 10rem;
+}
+
 .mainlist {
     font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactslogo {
+    width: 3rem;
 }
 
 .sublist {
