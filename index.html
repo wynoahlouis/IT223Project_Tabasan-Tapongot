@@ -59,16 +59,14 @@
     </div>
     </header>
 
-    
+    <!-- Home Page -->
     <section class="home" id="home">
         <div class="homecontent">
             <video id="videoloop" width="auto" height="350px"  autoplay loop muted>
                 <source src="videos/videoloop.mp4" type="video/mp4">
               </video>
               <div class="homedetails">
-                <!-- <img id="homename" src="images/nameforhome.png" alt="Serenitea"> -->
                 <br>
-                <!-- <h5>Welcome to Serenitea, your oasis of flavorful delights!</h5> -->
                 <h5>Experience Serenitea: A moment of peace with each cup.</h5>
                 <p>Discover a world of exquisite milk teas, refreshing beverages, and delectable snacks. Indulge your senses and experience true tranquility with every sip and bite. Explore our menu and embark on a journey of taste and serenity.</p>
                 <a href="#aboutus" class="learnmorebtn">Learn More</a>
@@ -76,57 +74,7 @@
         </div>
     </section>
 
-    <!-- <script>
-        var video = document.getElementById('videoloop');
-        var playing = true;
-    
-        var links = document.querySelectorAll('nav a');
-        links.forEach(function(link) {
-          link.addEventListener('click', function(event) {
-            event.preventDefault();
-            pauseVideo();
-
-            var targetId = this.getAttribute('href');
-            var targetSection = document.querySelector(targetId);
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-          });
-        });
-    
-        window.addEventListener('beforeunload', pauseVideo);
-        window.addEventListener('onclick', pauseVideo);
-
-        window.addEventListener('pageshow', playVideo);
-
-        function playVideo() {
-            if (!playing) {
-            video.play();
-            playing = true;
-          }
-        }
-
-        function pauseVideo() {
-            if (playing) {
-            video.pause();
-            playing = false;
-          }
-        }
-      </script> -->
-    
-    <!-- <script>
-        function pauseVideoOnUnload() {
-            var video = document.getElementById('videoloop');
-            video.stop();
-        }
-
-        window.addEventListener('hashchange', pauseVideoOnUnload);
-
-
-        // var video = document.getElementById('videoloop');
-        // window.addEventListener('beforeunload', function(event) {
-        //     video.stop();
-        // });
-    </script> -->
-
+    <!-- About Us -->
     <section class="aboutus" id="aboutus">
         <div><img id="image-side" src="images/cup.png" alt="Serenitea Logo"></div>
         <div id="text-side">
@@ -156,13 +104,13 @@
         </div>
     </section>
 
+    <!-- Featured -->
     <section class="featured" id="featured">
         <div class="title">
             <h3>Featured Products</h3>
-            <!-- <p>Insert Product Posters</p> -->
         </div>
 
-        <div class="featurebox"></div>
+        <div class="featurebox" style="align-items: center;"></div>
 
         <div class="featurecontent">
             <div class="card featuredcontainer1">
@@ -193,7 +141,6 @@
     </section>
 
     <section class="menu" id="menu">
-            <!-- <img src="#" alt="" > -->
             <div class="title">
                 <h3>Menu Page</h3>
             </div>
@@ -358,8 +305,7 @@
 
     <section class="contactus" id="contactus">
         <div class="title" ><h3>Get in Touch with Us</h3></div>
-        <div class="content" id="contact-content">
-            <!-- <img src="#" alt="" > -->
+        <div class="contact-content" id="contact-content">
             <div id="franchise">
                 <h4>Our Franchise</h4><br>
                 <ul class="mainlist">
@@ -390,12 +336,14 @@
                 </ul>
             </div>
         </div>
-        <footer>
-                <div class="footercontent">
-                    <p>Design and Development By: Tabasan & Tapongot</p>
-                    <p>Alll Rights Reserved &COPY; 2023</p>
-                </div>
-        </footer>
     </section>
+
+    <footer>
+        <div class="footercontent">
+            <p>Design and Development By: Tabasan & Tapongot</p>
+            <p>Alll Rights Reserved &COPY; 2023</p>
+        </div>
+    </footer>
+
 </body>
 </html>
