@@ -729,7 +729,7 @@ footer {
     vertical-align: bottom;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 768px) {
 	html {
 		font-size: 55%;
 	}
@@ -741,9 +741,28 @@ footer {
         display: flex;
         flex-direction: column;
 	}
+    .homecontent {
+        max-width: 90%;
+        padding-top: 15rem;
+    }
+    .homedetails h5 {
+        font-size: 3rem;
+    }
+    .homedetails p{
+        font-size: 3rem;
+    }
+    #aboutusheader {
+        font-size: 4rem;
+    }
+    .aboutus h3{
+        font-size: 3rem;
+    }
+    .aboutus p {
+        font-size: 3rem;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	#menu-btn {
 		display: inline-block;
 	}
@@ -787,8 +806,11 @@ footer {
         height: auto;
         width: auto;
     }
+    .home {
+        background-size: auto;
+    }
     .homecontent {
-        width: 100%;
+        max-width: 100%;
         margin-bottom: 2rem;
     }
 
