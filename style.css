@@ -367,7 +367,7 @@ ul {
 }
 
 
-.featurebox {
+/* .featurebox {
     background-color: beige;
     height: 250px;
     width: 1200px;
@@ -377,12 +377,12 @@ ul {
     background-image: url(images/pattern1.jpg);
     opacity: 50%;
     box-shadow: 5px 5px 5px gray;
-}
+} */
 
 .featured .featurecontent {
     display: flex;
     flex: wrap;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     
 }
 
@@ -420,6 +420,7 @@ ul {
 }
 
 .featurecontent .card {
+    display: inline-block;
     flex: 30%;
     margin: 10px 20px;
     text-align: center;
@@ -781,7 +782,7 @@ footer {
 	}
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
     section {
         height: auto;
         width: auto;
