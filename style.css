@@ -387,7 +387,7 @@ ul {
 }
 
 .featuredetails {
-    transform: translateY(80%);
+    transform: translateY(30%);
     font-size: 15px;
 }
 
@@ -427,7 +427,7 @@ ul {
     padding: 20px;
     border-radius: 10px;
     height: 350px;
-    width: 350;
+    /* width: 350; */
     background-color: var(--featurecard);
     box-shadow: 10px 10px 10px gray;
     transition: 0.5s;
@@ -448,7 +448,7 @@ ul {
     transform: scale(1.13);
 }
 
-#featured1 {
+/* #featured1 {
     transform: translateY(10%);
     box-shadow: 5px 5px 5px gray;
 }
@@ -462,7 +462,7 @@ ul {
     transform: translateY(10%);
     box-shadow: 5px 5px 5px gray;
 
-}
+} */
 
 
 /* Menu Products */
@@ -711,6 +711,7 @@ input[type=submit] {
     
 }
 
+/* Footer */
 footer {
     height: 10rem;
     font-size: 1.3rem;
@@ -729,6 +730,8 @@ footer {
     vertical-align: bottom;
 }
 
+
+/* Media Queries */
 @media (min-width: 768px) {
 	html {
 		font-size: 55%;
@@ -762,8 +765,42 @@ footer {
     }
 }
 
-@media (max-width: 767px) {
-	#menu-btn {
+/* @media (max-width: 991px) {
+	html {
+		font-size: 55%;
+	}
+	.header {
+		padding: 1.5rem 2rem;
+	}
+	section {
+		padding: 2rem;
+        display: flex;
+        flex-direction: column;
+	}
+    .homecontent {
+        max-width: 90%;
+        padding-top: 15rem;
+    }
+    .homedetails h5 {
+        font-size: 3rem;
+    }
+    .homedetails p{
+        font-size: 3rem;
+    }
+    #aboutusheader {
+        font-size: 4rem;
+    }
+    .aboutus h3{
+        font-size: 3rem;
+    }
+    .aboutus p {
+        font-size: 3rem;
+    }
+} */
+
+/* for navlinks para masulod sa menu icon */
+@media (max-width: 839px) {
+    #menu-btn {
 		display: inline-block;
 	}
 	.header .navbar {
@@ -788,6 +825,9 @@ footer {
 		width: 90%;
 		right: 2rem;
 	}
+}
+
+@media (max-width: 767px) {
 	.home {
 		background-position: left;
 		justify-content: center;
@@ -802,6 +842,10 @@ footer {
 }
 
 @media (max-width: 450px) {
+    .header {
+        width: 100%;
+        height: auto;
+    }
     section {
         height: auto;
         width: auto;
@@ -812,6 +856,19 @@ footer {
     .homecontent {
         max-width: 100%;
         margin-bottom: 2rem;
+    }
+    .homedetails {
+        padding-top: 20%;
+    }
+    .homedetails h5 {
+        font-size: small;
+    }
+    .homedetails p {
+        font-size: x-small;
+    }
+
+    .home #videoloop {
+        transform: translateY(60%);
     }
 
     .aboutus {
@@ -836,8 +893,20 @@ footer {
     .featurecontent {
         display: flex;
         flex-direction: column;
+        /* padding-left: 0; */
     }
 
+    .featurecontent .featuredetails {
+        transform: translateY(0%);
+    }
+
+    .featurecontent img {
+        object-fit: contain;
+    }
+
+    .blogcontent {
+        margin-left: -5%;
+    }
     .blogcontent .frame {
         flex-direction: column;
     }
@@ -846,8 +915,11 @@ footer {
         width: 100%;
     }
     
-
     #contact-content {
         display: inline-block;
+        padding-left: 17%;
+        padding-right: 17%;
     }
+    
+    
 }
