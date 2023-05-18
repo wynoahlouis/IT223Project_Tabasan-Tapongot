@@ -252,22 +252,24 @@ ul {
     background-size: cover;
     background-position: center;
     background-color: var(--bg);
+    width: 100%;
 }
 
-.home .homecontent {
-    max-width: 60rem;
+.homecontent {
+    max-width: 50%;
+    padding: 0;
 }
 
 #videoloop {
     transform: translateY(10%);
     border-radius: 5px;
     box-shadow: 1px 5px 10px rgb(93, 92, 92);
-
+    width: 100%;
 }
 
 .homedetails {
     transform: translateY(30%);
-
+    padding: 0;
 }
 .homedetails h5{
     font-size: 2.17rem;
@@ -287,7 +289,7 @@ ul {
 .home .learnmorebtn {
     padding: 8px;
     border-radius: 10px;
-    font-size: auto;
+    font-size: x-small;
     color: white;
     font-weight: bold;
     transform: translateY(-80%);
@@ -318,6 +320,7 @@ ul {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    max-width: 100%;
     /* filter: drop-shadow(.5rem .8rem .5rem black); */
     /* border-bottom-right-radius: 3rem; */
 }
@@ -384,6 +387,7 @@ ul {
 }
 
 .featuredetails {
+    transform: translateY(80%);
     font-size: 15px;
 }
 
@@ -421,8 +425,8 @@ ul {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    height: auto;
-    width: auto;
+    height: 350px;
+    width: 350;
     background-color: var(--featurecard);
     box-shadow: 10px 10px 10px gray;
     transition: 0.5s;
@@ -443,10 +447,20 @@ ul {
     transform: scale(1.13);
 }
 
-.featurecontent .card img {
+#featured1 {
+    transform: translateY(10%);
     box-shadow: 5px 5px 5px gray;
-    width: auto;
-    margin-bottom: 10px;
+}
+
+#featured2 {
+    transform: translateY(10%);
+    box-shadow: 5px 5px 5px gray;
+}
+
+#featured3 {
+    transform: translateY(10%);
+    box-shadow: 5px 5px 5px gray;
+
 }
 
 
@@ -687,14 +701,13 @@ input[type=submit] {
     flex-direction: column;
 }
 
-
 .contactslogo {
     width: 3rem;
 }
 
 .sublist {
     color: #F25A28;
-
+    
 }
 
 footer {
@@ -715,50 +728,32 @@ footer {
     vertical-align: bottom;
 }
 
-/* Media Queries */
 @media (max-width: 991px) {
 	html {
 		font-size: 55%;
 	}
 	.header {
-		padding: 1.5rem 1rem;
+		padding: 1.5rem 2rem;
 	}
 	section {
 		padding: 2rem;
         display: flex;
         flex-direction: column;
 	}
-    .home {
-        background-size:contain;
-    }
-   
-    .featured .featurebox{
-        width: fit-content;
-    }
-
 }
 
-
 @media (max-width: 768px) {
-    section {
-        width: auto;
-        height: auto;
-    }
 	#menu-btn {
 		display: inline-block;
 	}
-
 	.header .navbar {
 		position: absolute;
 		top: 100%;
 		right: -100%;
-		background: var(--bg2);
+		background: aliceblue;
 		width: 25rem;
-		height: calc(100vh - 20.5rem);
-        box-shadow: -2px 2px 2px gray;
-        border-radius: 5px;
+		height: calc(100vh - 9.5rem);
 	}
-
 	.header .navbar.active {
 		right: 0;
 	}
@@ -769,71 +764,21 @@ footer {
 		padding: 0.5rem;
 		font-size: 2rem;
 	}
-	.header .navsearch {
-		width: 30%;
+	.header .search-form {
+		width: 90%;
 		right: 2rem;
 	}
 	.home {
-		background-position: center;
+		background-position: left;
 		justify-content: center;
 		text-align: center;
-        background-size: contain;
-
 	}
-
-    .homecontent {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .home .homedetails {
-        height: auto;
-        /* transform: translateY(5%); */
-
-    }
-
-	.home .homedetails h5 {
-		font-size: auto;
-        margin-bottom: 20px;
+	.home .content h3 {
+		font-size: 4.5rem;
 	}
-	.home .homedetails p {
-        display: none;
-		font-size: smaller;
+	.home .content p {
+		font-size: 1.5rem;
 	}
-    .home .homedetails a {
-        font-size: smaller ;
-    }
-
-    .home #videoloop {
-        width:80%;
-        height: auto;
-        align-content: center;
-        transform: translateY(-10%);
-        transform: translateX(12%);
-        margin-bottom: 0;
-
-
-    }
-    
-    .featured .featurecontent {
-        flex-wrap: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .featured .featurebox{
-        width: fit-content;
-    }
-
-    .featured .card {
-        width: 50%;
-        transform: translateY(100%);
-
-    }
-
-    .blogs .frame {
-        size-adjust: -50%;
-
-    }
 }
 
 @media (max-width: 350px) {
@@ -865,10 +810,9 @@ footer {
     .title {
         margin-top: 0;
     }
-
     .featurecontent {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
     }
 
     .blogcontent .frame {
@@ -884,4 +828,3 @@ footer {
         display: inline-block;
     }
 }
-
