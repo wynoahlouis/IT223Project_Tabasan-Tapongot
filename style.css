@@ -109,7 +109,7 @@ ul {
     position:static;
 }
 .navbar a{
-    margin: 0 1 rem;
+    margin: 0 1rem;
     font-size: 1.6rem;
     color: var(--black);
     margin-left: 20px;
@@ -125,9 +125,9 @@ ul {
 .header .icons div {
 	color: var(--black);
 	cursor:pointer;
-	margin-left: 2rem;
+	margin-left: 1rem;
 	font-size: 2.5rem;
-    padding-right: 2px;
+    padding-right: 0px;
 }
 
 .header .icons div:hover {
@@ -173,7 +173,7 @@ ul {
 .header .cart-items-container {
 	position: absolute;
 	top: 100%;
-	right: -100%;
+	right: 100%;
 	height: 35rem;
 	width: 35rem;
 	background: #fff;
@@ -264,7 +264,7 @@ ul {
     transform: translateY(10%);
     border-radius: 5px;
     box-shadow: 1px 5px 10px rgb(93, 92, 92);
-    width: 100%;
+    width: 50%;
 }
 
 .homedetails {
@@ -327,7 +327,7 @@ ul {
 
 #text-side {
     font-size: 2rem;
-    padding-top: 15rem;
+    padding-top: 3rem;
     padding-bottom: 20rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -732,28 +732,48 @@ footer {
 
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media (min-width: 750px) and (max-width: 1000px) {
 	html {
 		font-size: 55%;
 	}
-	.header {
-		padding: 1.5rem 2rem;
+	/* .header {
+		padding: 1.5rem 2rem; */
 	}
 	section {
 		padding: 2rem;
         display: flex;
         flex-direction: column;
 	}
+    /* .homedetails {
+        padding-top: 20%;
+    }
+    .homedetails h5 {
+        font-size: small;
+    }
+    .homedetails p {
+        font-size: x-small;
+    }
+
+    .home #videoloop {
+        transform: translateY(60%);
+    } */
     .homecontent {
         max-width: 90%;
         padding-top: 15rem;
     }
+
+    .homedetails {
+        transform: translateY(-10%);
+    }
     .homedetails h5 {
-        font-size: 3rem;
+        font-size: small;
     }
     .homedetails p{
-        font-size: 3rem;
+        font-size: x-small;
     }
+    .home #videoloop {
+        transform: translateY(-10%);
+
     #aboutusheader {
         font-size: 4rem;
     }
@@ -799,7 +819,7 @@ footer {
 } */
 
 /* for navlinks para masulod sa menu icon */
-@media (max-width: 839px) {
+/* @media (min-width: 500px) and (max-width: 839px) {
     #menu-btn {
 		display: inline-block;
 	}
@@ -825,6 +845,49 @@ footer {
 		width: 90%;
 		right: 2rem;
 	}
+} */
+
+/* for responsisveness of header osn smaller screen sizes */
+@media (max-width: 859px) {
+    #menu-btn {
+		display: inline-block;
+	}
+    /* .header {
+        position: relative;
+    } */
+	.header .navbar {
+		position: absolute;
+		top: 100%;
+		right: 100%;
+		background: aliceblue;
+		width: 25rem;
+		height: calc(100vh - 9.5rem);
+        opacity: 30%;
+        
+	}
+	.header .navbar.active {
+		right: 0;
+        opacity: 100%;
+	}
+    
+	.header .navbar a {
+		color: var(--black);
+		display: block;
+		margin: 1.5rem;
+		padding: 0.5rem;
+		font-size: 2rem;
+	}
+	.header .search-form {
+		width: 90%;
+		right: 2rem;
+	}
+    .header {
+        justify-content: none;
+        align-content: none;
+    }
+    /* .header .cart-items-container {
+    opacity: 30%;
+    } */
 }
 
 @media (max-width: 767px) {
@@ -845,10 +908,26 @@ footer {
     .header {
         width: 100%;
         height: auto;
+        position: relative;
     }
+
+    .header .icons {
+        margin-left: 1rem;
+        font-size: 0.5rem;
+        padding-right: 0px;
+        align-content: center;
+    }
+
+    #logoname {
+        display: none;
+    }
+
+    /* .header .logo img {
+        width: auto;
+    } */
     section {
         height: auto;
-        width: auto;
+        width: 100%;
     }
     .home {
         background-size: auto;
@@ -858,7 +937,9 @@ footer {
         margin-bottom: 2rem;
     }
     .homedetails {
-        padding-top: 20%;
+        /* padding-top: 20%; */
+        transform: translateY(-60%);
+
     }
     .homedetails h5 {
         font-size: small;
@@ -868,9 +949,9 @@ footer {
     }
 
     .home #videoloop {
-        transform: translateY(60%);
+        transform: translateY(-60%);
+        margin-bottom: 10%;
     }
-
     .aboutus {
        display: inline-block;
        align-items: center;
