@@ -9,8 +9,27 @@
     --scrollbar: #fff;
 }
 
+/* For the font */
+
+@font-face {
+    font-family: 'Duepuntozero';
+    src: url('duepuntozero-font/Duepuntozero-BPgl.ttf') format('truetype');
+    src: url('duepuntozero-font/DuepuntozeroBlack-8YKB.ttf') format('truetype');
+    src: url('duepuntozero-font/DuepuntozeroBold-YLd8.ttf') format('truetype');
+    src: url('duepuntozero-font/DuepuntozeroExtrabold-rG99.ttf') format('truetype');
+    src: url('duepuntozero-font/DuepuntozeroExtralight-M8Rx.ttf') format('truetype');
+}
+
+/* Deupuntozero Font
+    DuepuntozeroBlack
+    DuepuntozeroBold
+    DuepuntozeroExtrabold
+    DuepuntozeroExtralight
+
+ */
+
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'DuepuntozeroBold', sans-serif;
     margin: 0; 
     padding:0;
     box-sizing: border-box;
@@ -48,6 +67,9 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background: var(--bg);
+}
+.title {
+    font-family:'DuepuntozeroExtrabold', sans-serif;
 }
 
 section {
