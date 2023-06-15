@@ -22,6 +22,8 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
+    transform: translateY(20%);
+
 }
 
 #contact {
