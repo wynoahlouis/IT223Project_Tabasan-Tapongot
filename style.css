@@ -10,15 +10,40 @@
 }
 
 /* For the font */
-
 @font-face {
+    font-family: 'Duepuntozero';
+    src: url('duepuntozero-font/Duepuntozero-BPgl.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'DuepuntozeroBlack';
+    src: url('duepuntozero-font/DuepuntozeroBlack-8YKB.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'DuepuntozeroBold';
+    src: url('duepuntozero-font/DuepuntozeroBold-YLd8.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'DuepuntozeroExtrabold';
+    src: url('duepuntozero-font/DuepuntozeroExtrabold-rG99.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'DuepuntozeroExtralight';
+    src: url('duepuntozero-font/DuepuntozeroExtralight-M8Rx.ttf') format('truetype');
+  }
+  
+
+/* @font-face {
     font-family: 'Duepuntozero';
     src: url('duepuntozero-font/Duepuntozero-BPgl.ttf') format('truetype');
     src: url('duepuntozero-font/DuepuntozeroBlack-8YKB.ttf') format('truetype');
     src: url('duepuntozero-font/DuepuntozeroBold-YLd8.ttf') format('truetype');
     src: url('duepuntozero-font/DuepuntozeroExtrabold-rG99.ttf') format('truetype');
     src: url('duepuntozero-font/DuepuntozeroExtralight-M8Rx.ttf') format('truetype');
-}
+} */
 
 /* Deupuntozero Font
     DuepuntozeroBlack
@@ -29,7 +54,7 @@
  */
 
 * {
-    font-family: 'DuepuntozeroBold', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0; 
     padding:0;
     box-sizing: border-box;
@@ -68,9 +93,6 @@ html::-webkit-scrollbar-thumb {
 body {
     background: var(--bg);
 }
-.title {
-    font-family:'DuepuntozeroExtrabold', sans-serif;
-}
 
 section {
     padding: 2rem 7%;
@@ -105,7 +127,20 @@ ul {
     text-align: center;
     margin-top: 5px;
 }
+.boldfont {
+    font-family: 'DuepuntozeroBold';
+    text-transform: uppercase;
+}
 
+.boldfont-minor {
+    font-family: 'Duepuntozero', sans-serif;
+    font-size: larger;
+}
+.blogfont {
+    font-family: 'DuepuntozeroBlack', sans-serif;
+    font-size: larger;
+    color:#bea93e;
+}
 /* Header and Navbar */
 .header {
     background: var(--header);
