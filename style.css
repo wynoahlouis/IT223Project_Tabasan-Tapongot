@@ -15,7 +15,6 @@
     padding:0;
     box-sizing: border-box;
     text-decoration: none;
-    /* text-transform: capitalize; */
     transition: .2s linear;
 }
 
@@ -592,6 +591,7 @@ ul {
     align-items: center;
     text-align: center;
     border-radius: 5px;
+    justify-content: center;
 }
 
 .frame .blogdetails h2 {
@@ -600,7 +600,7 @@ ul {
 }
 
 .frame .blogdetails p {
-    margin-top: 5px;
+    margin-top: 20px;
     font-size: 20px;
     text-align: justify;
 
@@ -626,8 +626,8 @@ ul {
 } */
 
 .blogbtn {
-    padding: 8px;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 150px;
     font-size: xx-small;
     color: white;
     font-weight: bold;
