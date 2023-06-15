@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Duepuntozero';
+    src: url('duepuntozero-font/Duepuntozero-BPgl.ttf') format('truetype');
+  }
+
+  .boldfont {
+    font-family: 'DuepuntozeroBold';
+    text-transform: uppercase;
+    color:#bea93e;
+    font-size: larger;
+
+}
 .main {
     margin: 0;
     padding: 0;
