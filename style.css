@@ -750,6 +750,7 @@ ul {
 .addtocartbtn:hover {
     background-color: #BEA93E;
     color: #010103;
+    cursor: pointer;
 }
 
 /* Blogs */
@@ -897,7 +898,19 @@ input[type=text] {
     border-radius: 10px;
 }
 
-input[type=submit] {
+/* input[type=submit] {
+    background-color: #F25A28;
+    padding: 5px;
+    width: 30rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+} */
+
+.messageusbtn {
     background-color: #F25A28;
     padding: 5px;
     width: 30rem;

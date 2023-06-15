@@ -35,10 +35,15 @@ function addToCart(itemName, itemImage, itemPrice) {
   document.addEventListener('DOMContentLoaded', function() {
     const checkoutBtn = document.querySelector('.checkout_btn');
     const addtocartBtn = document.querySelector('.addtocartbtn');
+        
+    // change ang Add to Cart to Added to Cart
+    addtocartBtn.addEventListener('click', function() {
+        addtocartBtn.textContent = 'Added to Cart!';
+        setTimeout(function() {
+        addtocartBtn.textContent = 'Add to Cart';
+        }, 2000);
+    })
 
-
-  
-    
     checkoutBtn.addEventListener('click', function() {
       // change ang button pag ma click "Checked Out"
       checkoutBtn.textContent = 'Checked Out';
@@ -51,13 +56,6 @@ function addToCart(itemName, itemImage, itemPrice) {
   
       // get all the cart items
       const cartItems = cartContainer.querySelectorAll('.cart-items');
-
-      // change ang Add to Cart to Added to Cart
-      addtocartBtn.textContent = 'Added to Cart!';
-      setTimeout(function() {
-        checkoutBtn.textContent = 'Check Out';
-      }, 1000);
-  
   
       
       const animationDuration = 500; // milliseconds
