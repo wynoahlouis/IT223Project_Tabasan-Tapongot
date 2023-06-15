@@ -232,9 +232,14 @@ ul {
     border: 2rem;
     border-radius: 10rem;
     cursor: pointer;
-    width: 100px;
-    margin-right: 10px;
+    width: 150px;
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
 
+}
+.checkout_btn {
+    align-content: bottom;
 }
 
 
@@ -242,7 +247,138 @@ ul {
     background-color: #BEA93E;
     color: #13131a;
 }
-/* Home Page */
+
+/* Home Page- Revised*/
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Add this line */
+    background-color: #f1f9ec;
+    width: 100%;
+  }
+  
+  .homecontent {
+    max-width: 100%;
+    display: flex; /* Add this line */
+    flex-wrap: flex;
+    justify-content: center; /* Add this line */
+    align-items: center; /* Add this line */
+  }
+  
+  .video {
+    justify-content: center;
+    display: 70%;
+
+  }
+  
+  #videoloop {
+    border-radius: 5px;
+    box-shadow: 1px 5px 10px rgb(93, 92, 92);
+    width: 50%;
+    max-width: 100%; /* Add this line */
+    max-height: 100%; /* Add this line */
+  }
+  
+  .homedetails {
+    padding-right: 150px;
+    border: 1px solid black;
+    margin-right: 20px;
+
+  }
+  
+  .homedetails h5 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: black;
+  }
+  
+  .homedetails p {
+    font-weight: light;
+    /* line-height: 1.8; */
+    padding: 1rem 0;
+    color: black;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  
+  .home #learnmorebtn {
+   align-content: center;
+   justify-content: center;
+   text-align: center;
+    
+  }
+  
+  .learnmorebtn:hover {
+    background-color: #BEA93E;
+    color: black;
+
+  }
+  
+/* .home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f1f9ec;
+    background-position: center;
+    width: 100%;
+}
+
+.homecontent {
+    max-width: 100%;
+    padding: 20px;
+    margin-top: 80px;
+    border: 1px solid black;
+
+}
+.vid {
+    align-content: center;
+}
+
+#videoloop {
+    padding-top: 0;
+    border-radius: 5px;
+    box-shadow: 1px 5px 10px rgb(93, 92, 92);
+    width: 50%;
+    align-items: center;
+    float:right;
+}
+
+.homedetails {
+    padding: 0;
+}
+.homedetails h5{
+    font-size: 2.17rem;
+    text-transform: capitalize;
+    color: black;
+}
+.homedetails p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: black;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.home .learnmorebtn {
+    padding: 8px;
+    border-radius: 10px;
+    font-size: x-small;
+    color: white;
+    font-weight: bold;
+    transform: translateY(-80%);
+    background-color:#F25A28;
+    text-transform: uppercase;
+}
+
+.learnmorebtn:hover {
+    background-color: #BEA93E;
+    color: black;
+} */
+
+/* Home Page - Original
 .home{
     min-height: 100vh;
     display: flex;
@@ -299,7 +435,7 @@ ul {
 .learnmorebtn:hover {
     background-color: #BEA93E;
     color: black;
-}
+} */
 
 /* About Us Page*/
 .aboutus {
@@ -365,6 +501,9 @@ ul {
     justify-content: center;
 }
 
+.featured .title {
+    margin-bottom: 5rem;
+}
 
 /* .featurebox {
     background-color: beige;

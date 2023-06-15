@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Serenitea - Make Tea, Not War</title>
     <script src="index.js" defer></script>
+    <script src="addtocart.js"></script>
     <script src="https://kit.fontawesome.com/2dfceffc7d.js" crossorigin="anonymous"></script>
 </head>
 
@@ -43,22 +44,40 @@
         </div>
 
         <div class="cart-items-container">
-            <div class="cart-items">
+            <!-- <div class="cart-items">
                 <span class="fas fa-times"></span>
                 <img src="/images/product1-redvelvet.jpg" alt="" />
                 <div class="content">
                     <h3>Red Velvet Milktea</h3>
                     <div class="price">₱100.00</div>
                 </div>
-            </div>
+            </div> -->
             <div class="checkout">
                 <a href="#" class="checkout_btn">Check Out!</a>
-                <i class="fas fa-duotone fa-trash"></i>
             </div>
         </div>
     </header>
 
     <!-- Home Page -->
+
+    <!-- Home Revision  -->
+    <section class="home" id="home">
+        <div class="homecontent">
+            <video id="videoloop" autoplay loop muted>
+                <source src="videos/videoloop.mp4" type="video/mp4">
+            </video>
+            
+            <div class="homedetails">
+                <br>
+                <h5>Experience Serenitea: A moment of peace with each cup.</h5>
+                <p>Discover a world of exquisite milk teas, refreshing beverages, and delectable snacks. Indulge your senses and experience true tranquility with every sip and bite. Explore our menu and embark on a journey of taste and serenity.</p>
+                <a href="#aboutus" class="btn" id="learnmorebtn">Learn More</a>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- Original
     <section class="home" id="home">
         <div class="homecontent">
             <video id="videoloop" autoplay loop muted>
@@ -68,10 +87,10 @@
                 <br>
                 <h5>Experience Serenitea: A moment of peace with each cup.</h5>
                 <p>Discover a world of exquisite milk teas, refreshing beverages, and delectable snacks. Indulge your senses and experience true tranquility with every sip and bite. Explore our menu and embark on a journey of taste and serenity.</p>
-                <a href="#aboutus" class="learnmorebtn">Learn More</a>
+                <a href="#aboutus" class="btn">Learn More</a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- About Us -->
     <section class="aboutus" id="aboutus">
@@ -145,18 +164,18 @@
             </div>
 
             <div class="menucontent">
-                <div class="card productcontainer1">
+                <div class="card productcontainer1" id="item1">
                     <img id="product 1" src="images/product1-redvelvet.jpg" alt="Red Velvet" height="120px">
                     <div class="productdetails">
                         <h3 style="margin-bottom:8px; text-align: center;">Red Velvet Milktea</h3>
                         <p>Savor the velvety allure of Red Velvet Milk Tea – a blissful fusion of tea and indulgent sweetness.</p>
                         <div class="prices_btn"></div>
                             <h4 style="font-size: 1.8rem;">₱100.00  <span style="font-size:13px; text-decoration: line-through; color: red;">150.00</span></h4>
-                            <a href="#" class="addtocartbtn">Add To Cart</a>
+                            <a href="#" class="addtocartbtn" onclick="addToCart(item1)">Add To Cart</a>
                         </div>
                 </div>  
 
-                <div class="card productcontainer2">
+                <div class="card productcontainer2" id="item2">
                     <img id="product 2" src="images/product2-strawberry.png" alt="Strawberry" height="120px">
                     <div class="productdetails">
                         <h3 style="margin-bottom:8px; text-align: center;">Strawberry Cheesecake Milktea</h3>
@@ -167,7 +186,7 @@
                         </div>
                 </div>
 
-                <div class="card productcontainer3">
+                <div class="card productcontainer3" id="item3">
                     <img id="product 3" src="images/product3-wintermelon.png" alt="Wintermelon" height="120px">
                     <div class="productdetails">
                         <h3 style="margin-bottom:8px; text-align: center;">Wintermelon Milktea</h3>
@@ -178,7 +197,7 @@
                         </div>
                 </div>
 
-                <div class="card productcontainer4">
+                <div class="card productcontainer4" id="item4">
                     <img id="product 4" src="images/product4-darkchocolate.jpg" alt="Dark Chocolate" height="120px">
                     <div class="productdetails">
                         <h3 style="margin-bottom:8px; text-align: center;">Dark Chocolate Milktea</h3>
@@ -189,7 +208,7 @@
                         </div>
                 </div>
 
-                <div class="card productcontainer5">
+                <div class="card productcontainer5" id="item5">
                     <img id="product 5" src="images/product5-okinawa.png" alt="Okinawa" height="120px">
                     <div class="productdetails">
                         <h3 style="margin-bottom:8px; text-align: center;">Okinawa Milktea</h3>
@@ -200,7 +219,7 @@
                         </div>
                 </div>
 
-                <div class="card productcontainer6">
+                <div class="card productcontainer6" id="item6">
                     <img id="product 6" src="images/product6-matcha.jpg" alt="Matcha" height="120px">
                     <div class="productdetails">
                         <h3 style="margin-bottom:8px; text-align: center;">Matcha Milktea</h3>
@@ -211,7 +230,7 @@
                         </div>
                 </div>
 
-                <div class="card productcontainer7">
+                <div class="card productcontainer7" id="item7">
                     <img id="product 7" src="images/product7-thai.jpg" alt="Thai" height="120px">
                     <div class="productdetails">
                         <h3 style="margin-bottom:8px; text-align: center;">Thai Milktea</h3>
@@ -222,7 +241,7 @@
                         </div>
                 </div>
 
-                <div class="card productcontainer8">
+                <div class="card productcontainer8" id="item8">
                     <img id="product 8" src="images/product8-brownsugar.png" alt="Brown Sugar" height="120px">
                     <div class="productdetails">
                         <h3 style="margin-bottom:8px; text-align: center;">Brown Sugar Milktea</h3>
@@ -233,7 +252,7 @@
                         </div>
                 </div>
 
-                <div class="card productcontainer9">
+                <div class="card productcontainer9" id="item9">
                     <img id="product 9" src="images/product9-greenapple.jpg" alt="Green Apple" height="120px">
                     <div class="productdetails">
                         <h3 style="margin-bottom:8px; text-align: center;">Green Apple Fruit Tea</h3>
@@ -244,7 +263,7 @@
                         </div>
                 </div>
 
-                <div class="card productcontainer10">
+                <div class="card productcontainer10" id="item10">
                     <img id="product 10" src="images/product10-taro.png" alt="Taro" height="120px">
                     <div class="productdetails">
                         <h3 style="margin-bottom:8px; text-align: center;">Taro Milktea</h3>
@@ -255,7 +274,7 @@
                         </div>
                 </div>
 
-                <div class="card productcontainer11">
+                <div class="card productcontainer11" id="item11">
                     <img id="product 11" src="images/product11-watermelon.png" alt="Watermelon" height="120px">
                     <div class="productdetails">
                         <h3 style="margin-bottom:8px; text-align: center;">Watermelon Milktea</h3>
@@ -266,7 +285,7 @@
                         </div>
                 </div>
 
-                <div class="card productcontainer12">
+                <div class="card productcontainer12" id="item12">
                     <img id="product 12" src="images/product12-cantalope.jpg" alt="Cantaloupe" height="120px">
                     <div class="productdetails">
                         <h3 style="margin-bottom:8px; text-align: center;">Cantaloupe Fruit Tea</h3>
