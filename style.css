@@ -902,7 +902,7 @@ input[type=text] {
     border-radius: 10px;
 }
 
-/* input[type=submit] {
+/* input[type=button] {
     background-color: #F25A28;
     padding: 5px;
     width: 30rem;
@@ -913,8 +913,7 @@ input[type=text] {
     border-radius: 10rem;
     cursor: pointer;
 } */
-
-.messageusbtn {
+#formbutton {
     background-color: #F25A28;
     padding: 5px;
     width: 30rem;
