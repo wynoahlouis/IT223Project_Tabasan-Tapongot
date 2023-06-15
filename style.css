@@ -873,6 +873,7 @@ form {
 }
 
 #uname, #email {
+    padding: 7px;
     width: 30rem;
 }
 
@@ -881,15 +882,24 @@ form #message {
     width: 30rem;
 }
 
+input::placeholder {
+    text-align: left;
+}
+
 input[type=text] {
-    text-align: center;
+    font-family: inherit;
+    text-align: left;
     margin-bottom: 1.5rem;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 0 15px 7px rgba(0,0,0,0.09);
+    border-radius: 10px;
 }
 
 input[type=submit] {
     background-color: #F25A28;
     padding: 5px;
-    width: 8rem;
+    width: 30rem;
     color: white;
     text-align: center;
     font-size: 1.5rem;
