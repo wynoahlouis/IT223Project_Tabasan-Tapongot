@@ -708,6 +708,9 @@ input[type=submit] {
 .contactslogo {
     width: 3rem;
 }
+.contactslogo:hover {
+    transform: scale(1.5);
+}
 
 .sublist {
     color: #F25A28;
