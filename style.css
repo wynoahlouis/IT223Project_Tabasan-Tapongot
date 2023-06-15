@@ -281,6 +281,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-height: 100vh;
 }
 .header .cart-items-container .checkout_btn {
 	text-align: center;
@@ -294,10 +295,13 @@ ul {
     padding: 15px;
     color: #fff;
     font-size: 15px;
-
+    position: absolute;
+    bottom: 10rem;
 }
 .checkout_btn {
-    align-content: bottom;
+    /* position: absolute;
+    bottom: 0; */
+    align-self: bottom;
 }
 
 
@@ -1001,6 +1005,7 @@ footer {
         font-size: x-small;
     }
     .home #videoloop {
+        width: 50%;
         transform: translateY(-10%);
 
     #aboutusheader {
@@ -1118,6 +1123,30 @@ footer {
     opacity: 30%;
     } */
 }
+/* .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+}
+.homecontent {
+    flex-direction: column;
+    text-align: justify;
+}
+.homedetails {
+    width: 100%;
+    padding: 0;
+    padding-top: 2rem;
+    text-align: left;
+}
+#discoverhead {
+    font-size: 4rem;
+}
+#discover {
+    font-size: 2.5rem;
+}
+#videoloop {
+    width: 100%;
+} */
 
 @media (max-width: 767px) {
 	.home {
@@ -1125,12 +1154,25 @@ footer {
 		justify-content: center;
 		text-align: center;
 	}
-	.home .content h3 {
-		font-size: 4.5rem;
-	}
-	.home .content p {
-		font-size: 1.5rem;
-	}
+    .homecontent {
+        flex-direction: column;
+        text-align: justify;
+    }
+    .homedetails {
+        width: 100%;
+        padding: 0;
+        padding-top: 2rem;
+        text-align: left;
+    }
+    #discoverhead {
+        font-size: 4rem;
+    }
+    #discover {
+        font-size: 2.5rem;
+    }
+    #videoloop {
+        width: 100%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1164,10 +1206,15 @@ footer {
     .homecontent {
         max-width: 100%;
         margin-bottom: 2rem;
+        flex-direction: column;
+        justify-content: left;
+        padding-left: 0;
     }
     .homedetails {
-        /* padding-top: 20%; */
-        transform: translateY(-60%);
+        text-align: left;
+        padding-left: 0;
+        width: 100%;
+        /* transform: translateY(-60%); */
 
     }
     .homedetails h5 {
@@ -1178,7 +1225,8 @@ footer {
     }
 
     .home #videoloop {
-        transform: translateY(-60%);
+        /* transform: translateY(-60%); */
+        width: 100%;
         margin-bottom: 10%;
     }
     .aboutus {
