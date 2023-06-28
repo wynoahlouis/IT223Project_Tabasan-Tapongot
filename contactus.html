@@ -6,6 +6,8 @@
     <link rel="icon" href="images/SereniteaLogo.png" type="image/x-icon"/>
     <link rel="stylesheet" href="contactus.css">
     <link rel="stylesheet" href="style.css">
+    <script src="contactus.js"></script>
+
     <title>Contact Us</title>
     <script src="https://kit.fontawesome.com/2dfceffc7d.js" crossorigin="anonymous"></script>
 
@@ -21,30 +23,38 @@
 
     </header>
 
-<div class="main">
-    <div class="contact-form-body">
-         <div class="container">  
-              <form id="contact" action="" method="post">
-                <h3><span class="boldfont">Contact Form</span></h3>
-                <h4>Let us know what's up</h4>
-                <fieldset>
-                  <input placeholder="Your Name" type="text" tabindex="1" required autofocus>
-                </fieldset>
-                <fieldset>
-                  <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                  <input placeholder="Your Phone Number (optional)" tabindex="3" required>
-                </fieldset>
-                <fieldset>
-                  <textarea placeholder="Type your message here...." tabindex="4" required></textarea>
-                </fieldset>
-                <fieldset>
-                  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                </fieldset>
-              </form>
-         </div>
-    </div>
-</div>
+  <div class="main">
+      <div class="contact-form-body">
+          <div class="container">  
+                <form id="contact" action="" method="post">
+                  <h3><span class="boldfont">Contact Form</span></h3>
+                  <h4>Let us know what's up</h4>
+                  <fieldset>
+                    <input id="name" placeholder="Your Name" type="text" tabindex="1" required autofocus >
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Phone Number (optional)" tabindex="3" required>
+                  </fieldset>
+                  <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="4" required></textarea>
+                  </fieldset>
+                  <fieldset>
+                    <button type="submit" id="submit">Submit</button>
+                  </fieldset>
+                </form>
+          </div>
+      </div>
+
+      <div id="popup" class="pop-up hidden">
+        <img class="logoserenitea" src="images/SereniteaLogo.png">
+        <p class="popupMessage"><span class="boldfont"></span> </p>
+      </div>
+  </div>
+
+  
+
 </body>
 </html>

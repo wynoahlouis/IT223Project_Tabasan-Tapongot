@@ -22,19 +22,19 @@
         </div>
 
         <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#aboutus">About Us</a>
-            <a href="#featured">Featured</a>
-            <a href="#menu">Menu</a>
-            <a href="#blogs">Blogs</a>
-            <a href="#contactus">Contact Us</a>
+            <a href="#home"><span class="navfont">Home</span></a>
+            <a href="#aboutus"><span class="navfont">About Us</span></a>
+            <a href="#featured"><span class="navfont">Featured</span></a>
+            <a href="#menu"><span class="navfont">Menu</span></a>
+            <a href="#blogs"><span class="navfont">Blogs</span></a>
+            <a href="#contactus"><span class="navfont">Contact Us</span></a>
         </nav>
 
         <!-- Icons For Navbar -->
         <div class="icons">
             <div class="fas fa-magnifying-glass fa-fade" id="search-btn"></div>
             <div class="fas fa-user" id="user-btn"></div>
-            <div class="fas fa-shopping-cart fa-bounce" id="cart-btn"></div>
+            <div class="fas fa-shopping-cart fa-bounce" id="cart-btn"><span class="cart-counter">0</span></div>
 
             <div class="fas fa-bars" id="menu-btn"></div>
         </div>
@@ -44,18 +44,29 @@
         </div>
 
         <div class="cart-items-container">
-            <!-- <div class="cart-items">
-                <span class="fas fa-times"></span>
-                <img src="/images/product1-redvelvet.jpg" alt="" />
-                <div class="content">
-                    <h3>Red Velvet Milktea</h3>
-                    <div class="price">₱100.00</div>
-                </div>
-            </div> -->
-            <div class="checkout">
-                <a class="checkout_btn" onclick="return false;">Check Out</a>
+
+            <div class="cart-wrapper">
+               <!--  <div class="cart-items">
+                    <span class="fas fa-times cancel"></span>
+                    <img src="/images/product1-redvelvet.jpg" alt="" />
+                    <div class="content">
+                        <h3 class="item-name">Red Velvet Milktea</h3>
+                        <div class="price">₱100.00</div>
+                        <div class="item-quantity">Quantity:</div>
+                    </div>
+                </div>  -->
+
             </div>
+
+            <div class="shopcart"><span class="blogfont">Shopping Cart</span></div>
+            <div class="cart-total"><span class="boldfont">Total:</span></div>
+
+             <div class="checkout">
+                    <a class="checkout_btn" onclick="checkout(); return false; ">Check Out</a>
+            </div>
+
         </div>
+        
     </header>
 
     <!-- Home Page -->
@@ -135,7 +146,7 @@
             <div class="card featuredcontainer1">
                 <img id="featured1" src="images/featured1.jpg" alt="" height="220px">
                 <div class="featuredetails">
-                    <h3 style="margin-bottom:15px">">What's New</h3>
+                    <h3 style="margin-bottom:15px"><span class="boldfont">What's New</span></h3>
                     <a href="#menu" class="featurebtn">Order Now!</a>
                 </div>
             </div>
@@ -143,7 +154,7 @@
             <div class="card featuredcontainer2">
                 <img id="featured2" src="images/featured2.jpg" alt="" height="220px">
                 <div class="featuredetails">
-                    <h3 style="margin-bottom:8px">Best Sellers</h3>
+                    <h3 style="margin-bottom:8px"><span class="boldfont">Best Sellers</span></h3>
                     <a href="#menu" class="featurebtn">Order Now!</a>
                 </div>
             </div>
@@ -151,7 +162,7 @@
             <div class="card featuredcontainer3">
                 <img id="featured3" src="images/featured3.jpg" alt="" height="220px">
                 <div class="featuredetails">
-                    <h3 style="margin-bottom:8px">On Sale</h3>
+                    <h3 style="margin-bottom:8px"><span class="boldfont">On Sale</span></h3>
                     <a href="#menu" class="featurebtn">Order Now!</a>
                 </div>
             </div>
@@ -354,12 +365,12 @@
                 <div id="contact">
                     <h4><span class="boldfont">Contact Us</span></h4><br>
                     <ul class="mainlist">
-                        <li class="listlabel">Email</li>
+                        <li class="listlabel"><span class="boldfont">Email</span></li>
                             <li class="sublist">sereniteatea12@gmail.com</li><br>
-                        <li class="listlabel">Cellphone Number</li>
+                        <li class="listlabel"><span class="boldfont">Cellphone Number</span></li>
                             <li class="sublist">09123456789</li>
                             <li class="sublist">09987654321</li><br>
-                        <li class="listlabel">Main Office</li>
+                        <li class="listlabel"><span class="boldfont">Main Office</span></li>
                             <li class="sublist">Blk 5 Lot 7 Cambridge Subdivision, <br> Barangay Iponan CDOC</li>
                     </ul>
                 </div>
@@ -367,21 +378,24 @@
                     <h4><span class="boldfont">Our Socials</span></h4><br>
                     <ul class="mainlist">
                         <a href="https://www.instagram.com/serenitea_cdo/" target="_blank"><i><img src="images/instagram.png" class="contactslogo"></i>
-                        <li class="sublist">@SereniteaCDO</li></a><br>
+                        <li class="sublist">@<span class="boldfont-minor">SereniteaCDO</span></li></a><br>
                         <a href="https://www.facebook.com/sereniteacdo"target="_blank"><i><img src="images/facebook.png" class="contactslogo"></i>
-                        <li class="sublist">SereniteaCDO</li></a><br>
+                        <li class="sublist">@<span class="boldfont-minor">SereniteaCDO</span></li></a><br>
                         <a href="https://twitter.com/taylorswift13"target="_blank"><i><img src="images/twitter.png" class="contactslogo"></i>
-                        <li class="sublist">@SereniteaCDO</li></a><br>
+                        <li class="sublist">@<span class="boldfont-minor">SereniteaCDO</span></li></a><br>
                     </ul>
                 </div>
                 <div id="form">
                     <h4><span class="boldfont">Want to share your<br>experience?</span></h4><br>
                     <form action="">
-                        <input type="text" id="uname" name="uname" placeholder="Enter Name *"><br>
-                        <input type="text" name="email" id="email" placeholder="Enter Email *"><br>
+                        <!-- <input type="text" id="uname" name="uname" placeholder="Enter Name *"><br>
+                        <input type="text" name="email" id="email" placeholder="Enter Email *"><br> -->
                         <!-- <input type="text" name="message" id="message" placeholder="Send us a message!"><br> -->
                         <!-- <input type="button" value="Message Us"><br> -->
                         <button id="formbutton"><a id="formbutton" href="contactus.html" target="_blank">Message Us</a></button>
+                        <br>
+                        <br>
+                        <img class="sereniteacontactus" src="images/logofornavbar.png" alt="" width="50px">
                     </form>
                     <!-- <a class="messageusbtn" href="contactus.html" target="_blank">Message Us</a> -->
 
@@ -392,10 +406,10 @@
 
     <footer>
         <div class="footercontent">
-            <p>Design and Development By: Tabasan & Tapongot</p>
-            <p>Alll Rights Reserved &COPY; 2023</p>
+            <p><span class="boldfont-minor">Design and Development By: Tabasan & Tapongot</span></p>
+            <p><span class="boldfont-minor">Alll Rights Reserved</span> &COPY; 2023</p>
         </div>
-    </footer>
+    </footer>   
 
 </body>
 </html>
